@@ -1,5 +1,6 @@
 export const initialState = {
   cart: [],
+  user:[]
 };
 export const getTotal = (cart) =>
   cart?.reduce((amount, item) => item.price + amount, 0);
@@ -24,8 +25,16 @@ const reducer = (state, action) => {
       }
 
       return { ...state, cart: newCart };
+
+      case "SET_USER":
+        return{
+          ...state,
+          user: action.user
+        }
+
     default:
       return state;
   }
+
 };
 export default reducer;
