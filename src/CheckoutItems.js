@@ -10,6 +10,7 @@ function CheckoutItems({
   product_price,
   product_image,
   product_rating,
+  hideButton,
 }) {
   const [{ cart }, dispatch] = useStateValue();
   const removeFromCart = () => {
@@ -36,8 +37,9 @@ function CheckoutItems({
               </p>
             ))}
         </div>
-
-        <button onClick={removeFromCart}>Remove From Cart</button>
+        {!hideButton && (
+          <button onClick={removeFromCart}>Remove From Cart</button>
+        )}
       </div>
     </div>
   );

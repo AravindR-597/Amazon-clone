@@ -21,15 +21,6 @@
 .payment_container_section_title{
     flex: .2;
 }
-.payment_container_section_address,.payment_container_section_items {
+.payment_container_section_address,.payment_container_section_items,.payment_container_section_paymentDetails {
     flex: .8;
-}
-.payment_container_section_items {
-  /* display: flex;
-    padding: 20px;
-    background-color: white;
-    height: max-content;
-    justify-content: space-between; */
-}
-.payment_container_section_paymentDetails {
 }
