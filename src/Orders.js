@@ -3,31 +3,36 @@ import "./Orders.css";
 import { useStateValue } from "./StateProvider";
 import Order from "./Order";
 import { db } from "./firebase";
+
 function Orders() {
+  const [{ user,cart }, dispatch] = useStateValue();
   const [orders, setOrders] = useState([]);
-  const [{ cart, user }, dispatch] = useStateValue();
+
   useEffect(() => {
+     console.log(user)
     if (user) {
        db.collection("users")
         .doc(user?.uid)
         .collection("orders")
         .orderBy("created", "desc")
-        .onSnapshot((snapshot) =>
+        .onSnapshot(snapshot =>
           setOrders(
-            snapshot.docs.map((doc) => ({
+            snapshot.docs.map(doc => ({
               id: doc.id,
               data: doc.data(),
             }))
           )
         );
-    } else {
+      } else {
       setOrders([]);
     }
+
   }, [user]);
 
+console.log(user)
   return (
     <div className="orders">
-      <h1>Order page</h1>
+      <h1>Your Order </h1>
       <div className="orders_container">
         {orders?.map(order => (
           <Order order={order} />

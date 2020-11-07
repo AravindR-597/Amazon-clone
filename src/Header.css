@@ -36,6 +36,7 @@
   color: white;
   justify-content: space-evenly;
 }
+
 .header_nav_option {
   display: flex;
   flex-direction: column;
@@ -47,6 +48,9 @@
   font-size: 10px;
   color: white;
   text-decoration:none ;
+}
+.header_nav_option_1  a{
+  text-decoration: none;
 }
 .header_nav_option_2 {
   font-size: 15px;

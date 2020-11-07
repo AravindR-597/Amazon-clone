@@ -24,3 +24,21 @@
 .payment_container_section_address,.payment_container_section_items,.payment_container_section_paymentDetails {
     flex: .8;
 }
+.payment_container_section_paymentDetails > form{
+  max-width: 400px;
+}
+.payment_container_section_paymentDetails > h3 {
+  padding-bottom: 20px;
+}
+.payment_container_section_paymentDetails >form >div > button {
+  background: #F3A847;
+  border-radius: 2px;
+  width: 100%;
+  height:30px;
+  border :1px solid;
+  font-weight: bold;
+  margin-top: 10px;
+  border-color: white;
+  color: black;
+
+}
