@@ -1,0 +1,64 @@
+.payment {
+  background-color: white;
+  /* height:calc(100vh - 60px) */
+}
+.payment_container > h1 {
+  text-align: center;
+  /* height: 100%; */
+  padding: 10px;
+  font-weight: 400;
+  background-color: rgb(234, 237, 237);
+  border-bottom: 1px solid lightgrey;
+}
+.payment_container > h1 a {
+  text-decoration: none;
+  color: black;
+}
+.payment_container_section {
+  display: flex;
+  padding: 20px;
+  margin: 0 20px;
+  border-bottom: 1px solid lightgrey;
+}
+.payment_container_section_title {
+  flex: 0.2;
+}
+.payment_container_section_address,
+.payment_container_section_items,
+.payment_container_section_paymentDetails {
+  flex: 0.8;
+}
+.payment_container_section_paymentDetails > form {
+  max-width: 400px;
+}
+.payment_container_section_paymentDetails > h3 {
+  padding-bottom: 20px;
+}
+.payment_container_section_paymentDetails > form > div > button {
+  background: #f3a847;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  font-weight: bold;
+  margin-top: 10px;
+  border-color: white;
+  color: black;
+}
+.payment_container_section_paymentDetailsContainer {
+  margin: 20px 0;
+}
+.not_signin {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.not_signin > a > h1 {
+  text-align: center;
+  padding: 10px;
+  font-weight: 400;
+  color: black;
+  /* background-color: rgb(234, 237, 237); */
+  /* border-bottom: 1px solid lightgrey; */
+}

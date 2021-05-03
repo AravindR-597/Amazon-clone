@@ -1,0 +1,22 @@
+.home {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home_container_row{
+      display: flex;
+      z-index: 1000;
+      margin-left: 5px;
+      margin-right: 5px;
+      /* overflow-x: scroll; */
+  }
+  .carousel{
+    margin-bottom: -300px;
+  }
+  .home_container_banner {
+    width: 100%;
+    z-index: -1;
+    mask-image: linear-gradient(to bottom, rgba(255,255, 255, 255), rgba(0, 0, 0, 0));
+  }
+  
