@@ -1,0 +1,40 @@
+.checkout {
+  display: flex;
+  padding: 20px;
+  /* height:100vh; */
+  background-color: white;
+  justify-content: space-between;
+}
+.checkout_left_text {
+  padding: 11px;
+}
+
+.checkout_left_text_1_span {
+  color: #b2454c;
+}
+.checkout_title {
+  font-weight: 400;
+  font-size: 28px;
+  font-style: normal;
+  line-height: 36px;
+  padding: 10px;
+  border-bottom: solid 1px lightgray;
+}
+.checkout_user {
+  font-weight: 400;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 36px;
+  margin-left: 10px;
+}
+.no_items {
+  height:calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no_items > h1 {
+  font-size: 50px;
+  font-weight: normal;
+}
+  
